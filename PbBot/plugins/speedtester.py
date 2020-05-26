@@ -40,7 +40,7 @@ class Speed(commands.Cog):
         i_s_p_rating = client_infos.get("isprating")
         await msg.edit(content='SpeedTest completed in {} seconds\nPing: {}\nDownload: {}\nUpload: {}\nInternet Service Provider: {}\nISP Rating: {}'.format(
                 ms, ping_time, humanbytes(download_speed), humanbytes(upload_speed), i_s_p, i_s_p_rating), delete_after=Delete_after_duration)
-        await ctx.send(f'@{ctx.message.author}Speedtest done!', delete_after=2.0)
+        await ctx.send(f'{ctx.message.author}Speedtest done!', delete_after=2.0)
         await ctx.message.delete()
     # @commands.command() #for commands
     # @commands.Cog.listener #for event listener
