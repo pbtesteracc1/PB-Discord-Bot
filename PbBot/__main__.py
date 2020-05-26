@@ -17,7 +17,7 @@ import logging
 from datetime import datetime
 
 logger = logging.getLogger('discord')
-logger.setLevel(logging.LOGGER_LEVEL)        # CRITICAL, ERROR, WARNING, INFO, and DEBUG and if not specified defaults to WARNING
+logger.setLevel(LOGGER_LEVEL)        # CRITICAL, ERROR, WARNING, INFO, and DEBUG and if not specified defaults to WARNING
 handler = logging.FileHandler(filename='./logs/discord.log', encoding='utf-8', mode='w')
 handler.setFormatter(logging.Formatter('%(asctime)s:%(levelname)s:%(name)s: %(message)s'))
 logger.addHandler(handler)
