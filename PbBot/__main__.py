@@ -10,13 +10,14 @@ import time
 from PbBot import (
     BOT_TOKEN,
     Delete_after_duration,
-    LOG_CHANNEL_ID
+    LOG_CHANNEL_ID,
+    LOGGER_LEVEL
     )
 import logging
 from datetime import datetime
 
 logger = logging.getLogger('discord')
-logger.setLevel(logging.DEBUG)        # CRITICAL, ERROR, WARNING, INFO, and DEBUG and if not specified defaults to WARNING
+logger.setLevel(logging.LOGGER_LEVEL)        # CRITICAL, ERROR, WARNING, INFO, and DEBUG and if not specified defaults to WARNING
 handler = logging.FileHandler(filename='./logs/discord.log', encoding='utf-8', mode='w')
 handler.setFormatter(logging.Formatter('%(asctime)s:%(levelname)s:%(name)s: %(message)s'))
 logger.addHandler(handler)
