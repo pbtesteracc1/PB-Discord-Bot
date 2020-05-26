@@ -7,4 +7,6 @@ class Config(object):
     AUTH_CHANNEL = int(os.environ.get("AUTH_CHANNEL", -100))
     # to specify delete message duration and log channel for bot
     Delete_after_duration = float(os.environ.get("Delete_after_duration", 10.0))
+    # Logging is very important!
     LOG_CHANNEL_ID = int(os.environ.get("LOG_CHANNEL_ID", -100))
+    LOGGER_LEVEL = os.environ.get("LOGGER_LEVEL", "WARNING")
