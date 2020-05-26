@@ -19,3 +19,4 @@ BOT_TOKEN = Config.BOT_TOKEN
 AUTH_CHANNEL = Config.AUTH_CHANNEL
 Delete_after_duration = Config.Delete_after_duration
 LOG_CHANNEL_ID = Config.LOG_CHANNEL_ID
+LOGGER_LEVEL = Config.LOGGER_LEVEL
